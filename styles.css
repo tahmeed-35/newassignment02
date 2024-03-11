@@ -1,0 +1,79 @@
+/* Navbar Styles */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 150px; /* Adding margin of 150px from both sides */
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+.logo {
+    float: left;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.red-text {
+    color: red;
+}
+
+.nav-links {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links li:first-child {
+    margin-left: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hamburger-menu {
+    display: none; /* Hide hamburger menu by default */
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 20px; /* Adjusting padding for smaller screens */
+    }
+
+    .nav-links {
+        display: none; /* Hide navigation links on small screens */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu on small screens */
+        float: right;
+        cursor: pointer;
+    }
+
+    .line {
+        width: 30px;
+        height: 4px;
+        background-color: #333;
+        margin: 5px 0;
+    }
+}
