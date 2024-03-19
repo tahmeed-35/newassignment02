@@ -77,7 +77,7 @@
 /* Navbar */
 @media screen and (max-width: 768px) {
     .nav-links {
-        display: none; 
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 80px;
@@ -103,11 +103,11 @@
 
 /* Default styles for the banner */
 .banner {
-    background-image: url('Images/Group\ 13\ \(1\)\ \(1\).png'); 
+    background-image: url('Images/Group\ 13\ \(1\)\ \(1\).png');
     background-size: cover;
     background-position: center;
     height: 500px;
-    width: calc(100% - 300px); 
+    width: calc(100% - 300px);
     margin: 0 auto;
     padding: 0 150px;
     position: relative;
@@ -122,7 +122,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .banner-content {
@@ -145,9 +145,9 @@
     margin-bottom: 30px;
 }
 
-/* Transparent glass-like background */
+
 .dropdown-container {
-    background: rgba(255, 255, 255, 0.2); 
+    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 20px;
@@ -162,7 +162,7 @@
 
 .dropdowns select,
 .dropdowns button {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     padding: 10px 20px;
     border: none;
     border-radius: 25px;
@@ -182,7 +182,7 @@
 }
 
 .dropdowns button:hover {
-    background-color: #FF4500; 
+    background-color: #FF4500;
 }
 
 .dropdowns select:focus,
@@ -193,7 +193,7 @@
 /* Media query for small devices */
 @media screen and (max-width: 768px) {
     .banner {
-        width: calc(100% - 40px); 
+        width: calc(100% - 40px);
         padding: 0 20px;
         margin-left: auto;
         margin-right: auto;
@@ -208,7 +208,7 @@
 /* Popular Tours */
 .popular-tours {
     padding: 50px 0;
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9;
 }
 
 .container {
@@ -217,11 +217,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .tour-content {
-    flex-basis: 50%; 
+    flex-basis: 50%;
     margin-right: 20px;
 }
 
@@ -236,7 +236,7 @@
 }
 
 .tour-image {
-    flex-basis: 40%; 
+    flex-basis: 40%;
 }
 
 .tour-image img {
@@ -255,19 +255,19 @@
 }
 
 .read-more-btn:hover {
-    background-color: #FF4500; 
+    background-color: #FF4500;
 }
 
 /* Media query for small devices */
 @media screen and (max-width: 768px) {
     .container {
-        flex-direction: column; 
-        align-items: flex-start; 
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .tour-image {
-        margin-top: 20px; 
-        flex-basis: 100%; 
+        margin-top: 20px;
+        flex-basis: 100%;
     }
 }
 
@@ -290,7 +290,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-p.paragraph-cyd {
+p.section-paragraph {
     font-weight: 400;
     text-align: center;
     padding-bottom: 20px;
@@ -301,12 +301,14 @@ p.paragraph-cyd {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+
 .photo-grid2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
 }
+
 .photo-grid3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -351,18 +353,93 @@ p.paragraph-cyd {
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
+
     .photo-grid1,
     .photo-grid2,
     .photo-grid3 {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 20px; 
+        gap: 20px;
     }
 
     .photo-grid1 .photo,
     .photo-grid2 .photo,
     .photo-grid3 .photo {
-        margin-bottom: 0; 
+        margin-bottom: 0;
     }
 }
 
+/* Why Choose Us section styles */
+.why-choose-us {
+    margin: 10% 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.section-paragraph {
+    margin-bottom: 40px;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.box-container3 {
+    margin: 0 25% 0 25%;
+}
+
+.box {
+    width: 573px;
+    height: 283px;
+    border-radius: 5px;
+    background-color: #fbb563;
+    padding: 5%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.box3 {
+    width: 573px;
+    height: 283px;
+    border-radius: 5px;
+    background-color: #29cef6;
+    padding: 5%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+.pq {
+    width: 50px;
+    height: 50px;
+    max-width: 100%; 
+    max-height: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+/* Media Queary For Small Devices */
+@media screen and (max-width: 768px) {
+    .box-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .box-container3 {
+        margin: 0 ;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
