@@ -74,7 +74,7 @@
     margin: 5px;
 }
 
-/* Navbar */
+/* Media Queary For Navbar */
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
@@ -101,7 +101,7 @@
 }
 
 
-/* Default styles for the banner */
+/* styles for the banner */
 .banner {
     background-image: url('Images/Group\ 13\ \(1\)\ \(1\).png');
     background-size: cover;
@@ -190,7 +190,7 @@
     outline: none;
 }
 
-/* Media query for small devices */
+/* Media query for Banner */
 @media screen and (max-width: 768px) {
     .banner {
         width: calc(100% - 40px);
@@ -258,7 +258,7 @@
     background-color: #FF4500;
 }
 
-/* Media query for small devices */
+/* Media query for Popular Tours Section */
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -351,7 +351,7 @@ p.section-paragraph {
     opacity: 1;
 }
 
-/* Media query for smaller screens */
+/* Media query for Choose Your Destination Section */
 @media screen and (max-width: 768px) {
 
     .photo-grid1,
@@ -423,14 +423,14 @@ p.section-paragraph {
 .pq {
     width: 50px;
     height: 50px;
-    max-width: 100%; 
+    max-width: 100%;
     max-height: 100%;
     margin-bottom: 10px;
 }
 
 
 
-/* Media Queary For Small Devices */
+/* Media Queary For Why Choose Us Section */
 @media screen and (max-width: 768px) {
     .box-container {
         display: grid;
@@ -438,7 +438,7 @@ p.section-paragraph {
     }
 
     .box-container3 {
-        margin: 0 ;
+        margin: 0;
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -485,4 +485,195 @@ p.section-paragraph {
 
 .testimonial-text {
     font-style: italic;
+}
+
+
+/* Newsletter section styles */
+.newsletter {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.newsletter-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-info {
+    flex: 1;
+    position: relative;
+    display: inline-block;
+}
+
+.newsletter-info img {
+    width: 672px;
+    height: 422px;
+    margin-left: 20px;
+}
+
+.ash-hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.newsletter-form {
+    flex: 1;
+    text-align: left;
+    border: 2px solid orange;
+    border-radius: 10px;
+}
+
+.newsletter-padding {
+    padding: 20% 10%;
+}
+
+.newsletter-header {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.newsletter-text {
+    margin-bottom: 20px;
+}
+
+.newsletter-form-fields input[type="email"],
+.newsletter-form-fields input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter-form-fields button {
+    background-color: orange;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter-form-fields button:hover {
+    background-color: #ff9933;
+}
+
+.discount-badge {
+    position: absolute;
+    bottom: 135px;
+    right: 0;
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    transform: rotate(-45deg);
+    transform-origin: bottom right;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+/* Media query for newsletter section */
+@media screen and (max-width: 768px) {
+    .newsletter-content {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-info,
+    .newsletter-form {
+        width: 100%;
+        text-align: center;
+    }
+
+    .newsletter-info img {
+        order: 1;
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Footer Styles */
+
+.footer {
+    background-color: #F3F3F3;
+    color: #111111;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    margin: 0 35% 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.logo-text {
+    color: #0c0c0c;
+}
+
+.highlight {
+    color: orange;
+}
+
+.footer-paragraph {
+    flex: 1;
+    margin: 20px 0;
+    max-width: 400px;
+    font-size: 20px;
+}
+
+.social-icons {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.footer-divider {
+    width: 5px solid;
+    margin: 10%;
+}
+
+/* Media queries for footer section */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .centered {
+        max-width: 100%;
+    }
+
+    .footer-divider {
+        max-width: 100%;
+    }
 }
